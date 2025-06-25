@@ -1,2 +1,35 @@
-Blog
-https://ia-afrocentree.blogspot.com
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog IA Afrocentrée</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <div class="logo">📖 Blog</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="elevation.html">Élévation Puissance Afro</a></li>
+        <li><a href="ai-afrocentree.html">AI Afrocentrée</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="formations.html">Formations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-alt">
+    <h2>📖 Restez informé(e) sur l’IA Afrocentrée</h2>
+    <p>Retrouvez ici toute l'actualité de l'IA axée sur la diaspora noire, l'éthique IA, l'impact technologique et culturel.</p>
+    <a href="https://ia-afrocentree.blogspot.com " target="_blank" class="btn-main">Visiter le blog</a>
+  </section>
+
+  <footer>
+    <p>© 2025 - YLaB by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
+  </footer>
+
+</body>
+</html>
