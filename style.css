@@ -1,3 +1,7 @@
+/* ==================== */
+/* 1. Variables globales */
+/* ==================== */
+
 :root {
   --primary-color: #800080;     /* Violet profond */
   --secondary-color: #FFA07A;   /* Saumon */
@@ -5,7 +9,12 @@
   --gold-color: #D4AF37;        /* Or */
   --background-color: #f9f9f9;
   --text-color: #333;
+  --font-main: 'Georgia', serif;
 }
+
+/* ==================== */
+/* 2. Base & Reset */
+/* ==================== */
 
 * {
   box-sizing: border-box;
@@ -14,11 +23,24 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-main);
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==================== */
+/* 3. Header & Navigation */
+/* ==================== */
 
 .sticky-header {
   background: var(--accent-color);
@@ -39,14 +61,12 @@ body {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -54,6 +74,10 @@ nav a {
 nav a:hover {
   color: var(--gold-color);
 }
+
+/* ==================== */
+/* 4. Hero & Sections */
+/* ==================== */
 
 .hero,
 .hero-alt {
@@ -68,6 +92,10 @@ nav a:hover {
   margin: auto;
   padding: 2rem;
 }
+
+/* ==================== */
+/* 5. Cartes & Agents IA */
+/* ==================== */
 
 .agent-grid {
   display: grid;
@@ -105,6 +133,10 @@ nav a:hover {
   background: #6a0dad;
 }
 
+/* ==================== */
+/* 6. Formulaire Contact */
+/* ==================== */
+
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -128,17 +160,20 @@ nav a:hover {
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  transition: background 0.3s ease;
 }
 
 .contact-form .btn-main:hover {
   background: #b8860b;
 }
 
-footer {
-  background: var(--accent-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+/* ==================== */
+/* 7. Section About Me */
+/* ==================== */
+
+.cv-section {
+  margin-bottom: 2rem;
 }
+
+.cv-section h3 {
+  color: var(--gold-color);
