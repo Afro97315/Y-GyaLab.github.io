@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YLaB – Univers Afrocentré Technoculturel</title>
   <link rel="stylesheet" href="style.css"/>
+  <!-- Animation on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
 
   <header class="sticky-header">
-    <div class="logo">🌌 YLaB</div>
+    <div class="logo">
+      <!-- Hiéroglyphe Puissance -->
+      <span aria-label="Hiéroglyphe Puissance" style="vertical-align:middle;">
+        <!-- SVG PUISSANCE -->
+        <svg width="32" height="32" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#D4AF37" /><text x="50%" y="55%" text-anchor="middle" font-size="32" fill="#222" font-family="serif">&#x131BC;</text></svg>
+      </span>
+      YLaB
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -22,25 +31,56 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>🌍 YLaB</h1>
-    <p>Le Premier Laboratoire en France dédié à l’IA Afrocentrée</p>
-    <a href="#entities" class="btn-main">Découvrir</a>
+  <!-- HERO SECTION -->
+  <section class="hero-alt" data-aos="fade-down">
+    <h1>
+      <!-- Hiéroglyphe Féminité -->
+      <span aria-label="Hiéroglyphe Féminité" style="vertical-align:middle;">
+        <!-- SVG FEMINITE -->
+        <svg width="42" height="42" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#800080" /><text x="50%" y="55%" text-anchor="middle" font-size="28" fill="#fff" font-family="serif">&#x131CB;</text></svg>
+      </span>
+      Bienvenue chez YLaB
+    </h1>
+    <p>Le Premier Labo techno-culturel dédié à l’IA Afrocentrée, à la puissance et la créativité féminines d’inspiration africaine.</p>
+    <a href="#entities" class="btn-main" data-aos="zoom-in">Découvrir</a>
   </section>
 
   <main id="entities" class="container">
-    <section class="feature-card" data-aos="fade-up">
-      <span class="glyphe">👁️</span>
-      <h3>🌿 Élévation Puissance Afro</h3>
-      <p>Sublimez votre force intérieure — Afrodescendant·e·s, reconnectez-vous à vos racines.</p>
-      <a href="elevation.html" class="btn-small">Explorer</a>
+    <section class="agent-grid">
+      <div class="agent-card" data-aos="fade-up" data-aos-delay="100">
+        <!-- Hiéroglyphe Féminité -->
+        <span style="display:block;margin-bottom:1rem;">
+          <svg width="40" height="40" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#D4AF37" /><text x="50%" y="55%" text-anchor="middle" font-size="24" fill="#800080" font-family="serif">&#x131CB;</text></svg>
+        </span>
+        <h3>Féminin Sacré</h3>
+        <p>Honorer la force, la sagesse et l’intuition des femmes afrodescendantes à travers des outils innovants.</p>
+        <a href="elevation.html" class="btn-small">Explorer</a>
+      </div>
+      <div class="agent-card" data-aos="fade-up" data-aos-delay="200">
+        <!-- Hiéroglyphe Puissance -->
+        <span style="display:block;margin-bottom:1rem;">
+          <svg width="40" height="40" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#800080" /><text x="50%" y="55%" text-anchor="middle" font-size="24" fill="#FFD700" font-family="serif">&#x131BC;</text></svg>
+        </span>
+        <h3>Puissance Ancestrale</h3>
+        <p>Reconnectez-vous à la puissance et la résilience héritées des grandes lignées africaines.</p>
+        <a href="ai-afrocentree.html" class="btn-small">Explorer</a>
+      </div>
+      <div class="agent-card" data-aos="fade-up" data-aos-delay="300">
+        <!-- Hiéroglyphe Savoir -->
+        <span style="display:block;margin-bottom:1rem;">
+          <svg width="40" height="40" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#FFA07A" /><text x="50%" y="55%" text-anchor="middle" font-size="24" fill="#800080" font-family="serif">&#x131C8;</text></svg>
+        </span>
+        <h3>Savoirs & Transmission</h3>
+        <p>Valoriser la transmission intergénérationnelle et l’innovation par l’IA afrocentrée.</p>
+        <a href="blog.html" class="btn-small">Lire</a>
+      </div>
     </section>
 
-    <section class="feature-card" data-aos="fade-up">
-      <span class="glyphe">✠</span>
-      <h3>🤖 AI Afrocentrée</h3>
-      <p>Démocratisons l'IA au sein de la diaspora noire – Éthique, inclusion, innovation.</p>
-      <a href="ai-afrocentree.html" class="btn-small">Explorer</a>
+    <!-- CTA Section -->
+    <section class="cta-section" data-aos="zoom-in-up" style="margin-top:3rem;text-align:center;">
+      <h2>✨ Rejoignez la Communauté YLaB !</h2>
+      <p>Explorez, apprenez et créez avec nous. Formations, ateliers, agents IA, et +</p>
+      <a href="formations.html" class="btn-main">Découvrir nos formations</a>
     </section>
   </main>
 
@@ -48,8 +88,8 @@
     <p>© 2025 - YLaB by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
   </footer>
 
-  <!-- AOS Animation -->
-  <script src="https://unpkg.com/aos @next/dist/aos.js"></script>
+  <!-- Animation on Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
 </html>
