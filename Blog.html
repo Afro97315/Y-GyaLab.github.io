@@ -3,33 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog IA Afrocentrée</title>
+  <title>Blog IA Afrocentrée | Actualité et Technologie pour la Diaspora Noire</title>
+  <meta name="description" content="Restez informé·e sur l’actualité de l’IA afrocentrée, l’éthique, l’impact technologique et culturel pour la diaspora noire.">
+  <meta name="keywords" content="IA afrocentrée, intelligence artificielle, diaspora noire, éthique, technologie, culture, YLaB, Indye Z Corporation, blog IA">
+  <meta property="og:title" content="Blog IA Afrocentrée | YLaB"/>
+  <meta property="og:description" content="Toute l’actualité de l’IA axée sur la diaspora noire, son éthique, son impact technologique et culturel."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://afro97315.github.io/Blog.html"/>
+  <meta property="og:image" content="https://afro97315.github.io/assets/og-image.png"/>
+  <link rel="canonical" href="https://afro97315.github.io/Blog.html"/>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+  <link rel="preload" href="style.css" as="style"/>
   <link rel="stylesheet" href="style.css"/>
+  <!-- Example for font performance, uncomment if using Google Fonts:
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=YourFont:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=YourFont:wght@400;700&display=swap" rel="stylesheet">
+  -->
 </head>
 <body>
-
   <header class="sticky-header">
-    <div class="logo">📖 Blog</div>
-    <nav>
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+      <img src="assets/logo.png" alt="Logo YLaB Blog" height="36" loading="lazy" style="vertical-align:middle;margin-right:8px;">
+      <span>📖 Blog</span>
+    </a>
+    <nav aria-label="Menu principal">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="elevation.html">Élévation Puissance Afro</a></li>
-        <li><a href="ai-afrocentree.html">AI Afrocentrée</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="ai-afrocentree.html">IA Afrocentrée</a></li>
+        <li><a href="blog.html" aria-current="page">Blog</a></li>
         <li><a href="formations.html">Formations</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero-alt">
-    <h2>📖 Restez informé(e) sur l’IA Afrocentrée</h2>
-    <p>Retrouvez ici toute l'actualité de l'IA axée sur la diaspora noire, l'éthique IA, l'impact technologique et culturel.</p>
-    <a href="https://ia-afrocentree.blogspot.com " target="_blank" class="btn-main">Visiter le blog</a>
-  </section>
+  <main>
+    <section class="hero-alt">
+      <h1>Blog IA Afrocentrée</h1>
+      <h2>Restez informé·e sur l’IA afrocentrée</h2>
+      <p>
+        Retrouvez ici toute l’actualité de l’intelligence artificielle axée sur la diaspora noire, l’éthique, l’impact technologique et culturel.
+      </p>
+      <a href="https://ia-afrocentree.blogspot.com" target="_blank" rel="noopener" class="btn-main">
+        Lire les articles sur le blog externe
+      </a>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 - YLaB by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
+    <p>© 2025 - YLaB by Indye 'Z Corporation | L’IA pour TOUS | Ansam Nou Pli FO</p>
   </footer>
 
+  <!-- Performance: Place scripts just before </body> and use async/defer as needed -->
+  <!-- <script src="main.js" async></script> -->
 </body>
 </html>
