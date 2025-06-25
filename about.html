@@ -7,11 +7,35 @@
   <!-- Ajout du CSS AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Ajout du style pour le bouton CV */
+    .cv-pro-link-section {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .cv-pro-link-section a {
+      font-weight: bold;
+      color: #1e88e5;
+      padding: 8px 18px;
+      background: #f3f6fa;
+      border-radius: 7px;
+      text-decoration: underline;
+      font-size: 1.1em;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+      margin-left: 0.5em;
+    }
+    .cv-pro-link-section a:hover {
+      background: #e3e9f3;
+      color: #0d47a1;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
   <header class="sticky-header">
-    <div class="logo">👤 CV - Indye Gyal&#39;Z Corporation</div>
+    <div class="logo">👤 CV - Indye Gyal'Z Corporation</div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -54,12 +78,20 @@
       </ul>
     </section>
 
-   </li>!https://amaryahys.my.canva.site/profil-neutre-indye</li>
+    <!-- Bloc Lien CV Pro stylisé -->
+    <section class="cv-pro-link-section" data-aos="fade-up">
+      <p>
+        Consulter mon Cv Pro :
+        <a href="https://amaryahys.my.canva.site/cv-de-cuya-experte-en-transformation-agile" target="_blank">
+          ICI
+        </a>
+      </p>
+    </section>
 
   </main>
 
   <footer>
-    <p>© 2025 - YLaB by Indye &#39;Z Corporation | L&#39;IA pour TOUS | Ansam Nou Pli FO</p>
+    <p>© 2025 - YLaB by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
   </footer>
 
   <!-- AOS Animation -->
