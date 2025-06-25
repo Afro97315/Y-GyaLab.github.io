@@ -1,0 +1,56 @@
+Contact html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - YLaB</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <div class="logo">📧 Contact</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="elevation.html">Élévation Puissance Afro</a></li>
+        <li><a href="ai-afrocentree.html">AI Afrocentrée</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="formations.html">Formations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-alt">
+    <h2>📩 Parlez à l’équipe YLaB</h2>
+    <p>Vous avez un projet, une question ou souhaitez collaborer ? Remplissez ce formulaire.</p>
+  </section>
+
+  <main class="container">
+    <section class="contact-form" data-aos="fade-up">
+      <form action="https://formspree.io/f/mqkoyvro " method="POST">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-main">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - YLaB by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos @next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
