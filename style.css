@@ -178,3 +178,62 @@ nav a:hover {
 .cv-section h3 {
   color: var(--gold-color);
 }
+/* ==================== */
+/* 8. Responsive Design */
+/* ==================== */
+
+@media (max-width: 900px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sticky-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero,
+  .hero-alt {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .agent-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .agent-card {
+    padding: 1rem;
+  }
+
+  .cta-section {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
