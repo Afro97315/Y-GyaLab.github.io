@@ -1,135 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Élévation Puissance Afro</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevation | Y-GyaLab</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Style CSS -->
   <style>
-    .ebooks-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-      font-size: 0.97em;
+    :root {
+      --violet: #6A0DAD;
+      --orange: #FF6B35;
+      --gold: #FFD700;
+      --white: #FFFFFF;
+      --dark: #1A1A1A;
     }
-    .ebooks-table th, .ebooks-table td {
-      border: 1px solid #eee;
-      padding: 8px 6px;
-      text-align: left;
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: var(--white);
+      color: var(--dark);
     }
-    .ebooks-table th {
-      background: #f5f5f5;
+    
+    header {
+      background: linear-gradient(135deg, var(--violet), #4D0A7F);
+      color: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      color: var(--violet);
+    }
+    
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-top: 4px solid var(--orange);
+    }
+    
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background: var(--gold);
+      transform: translateY(-2px);
+    }
+    
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    
+    /* Effet doré pour les mots-clés */
+    .highlight {
+      color: var(--gold);
       font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-  <header class="sticky-header">
-    <div class="logo">𓆑 Élévation Puissance Afro</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="elevation.html">Élévation Puissance Afro</a></li>
-        <li><a href="ai-afrocentree.html">AI Afrocentrée</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="formations.html">Formations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <h1>Elevation</h1>
+    <p>Élevez votre <span class="highlight">projet digital</span> avec notre expertise</p>
   </header>
-
-  <section class="hero-alt">
-    <h2>𓂀 Sublimez votre force intérieure</h2>
-    <p>Reconnectez-vous à vos racines culturelles et spirituelles grâce à des outils numériques bienveillants.</p>
-  </section>
-
-  <main class="container">
-    <section class="agent-grid" data-aos="fade-up">
-      <div class="agent-card">
-        <h4>𓋹 Bulle de Yémeenoo</h4>
-        <p>Espace sacré numérique personnalisé par vos mots.</p>
-        <a href="https://bulle-bien-etre-test.lovable.app/" target="_blank" class="btn-resa">Tester Bulle de Yémeenoo</a>
-      </div>
-
-      <div class="agent-card">
-        <h4>𓋹 ELYA</h4>
-        <p>Agent IA émotionnel pour les personnes atteintes du syndrome d'Ehlers Danlos.</p>
-        <p><em>Spoil Alert : version augmentée en septembre 2025</em></p>
-      </div>
-
-      <div class="agent-card">
-        <h4>𓇼 AMARYAHYS</h4>
-        <p>Agent IA pour le Glow-Up des Femmes Noires – Confiance, affirmation, projection positive.</p>
-        <a href="https://amaryahys.my.canva.site/cr-ation-d-un-agent-ia-afrocentr-pour-femmes-noires" target="_blank" class="btn-resa">Découvrir AMARYAHYS</a>
-      </div>
-
-      <div class="agent-card">
-        <h4>𓇼 YSSAHYS</h4>
-        <p>Créez vos affirmations personnalisées et positives pour renforcer votre estime de soi.</p>
-        <a href="https://amaryahys.my.canva.site/affirmations-personnalis-es-avec-yssahys" target="_blank" class="btn-resa">Utiliser YSSAHYS</a>
-      </div>
-
-      <div class="agent-card">
-        <h4>𓏤𓏤 Ateliers thématiques</h4>
-        <p>Confiance en soi, Mindset Afro caraibéens, Boost Pill…</p>
-      </div>
-
-      <!-- NOUVEL ENCAR EBOOKS -->
-      <div class="agent-card">
-        <h4>📚 Ebooks – Élévation Puissance Afro</h4>
-        <p>Découvrez notre sélection de mini-ebooks pour l’épanouissement afrocentré de toute la famille.</p>
-        <table class="ebooks-table">
-          <thead>
-            <tr>
-              <th>Thème</th>
-              <th>Format</th>
-              <th>Prix</th>
-              <th>Public</th>
-              <th>Lien d'Achat</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Le Royaume des Lucioles Sacrées</td>
-              <td>Kindle + Broché</td>
-              <td>Abonnement Kindle (Free)<br>ou 8,93 €<br>15,09 € en Livre broché</td>
-              <td>Tout Public</td>
-              <td>
-                <a href="https://www.amazon.fr/Royaume-Lucioles-Sacr%C3%A9es-AFFIRMATIONS-quelesLUCIOLESdetesAnc%C3%AAtresBRILLENTToujoursplusFORT/dp/B0F7KSHX9W/ref=sr_1_1?crid=21VHFPHQ2BMK&dib=eyJ2IjoiMSJ9.i-7xUPTdqU0iT386ibWGsgITToZRs7SL33IadZ2neCw.f4H7LU2hgGfkMB7TgOeAMd6F8rDfoVOJp73NBiBIHj8&dib_tag=se&keywords=le+royaume+des+lucioles+sacrees&qid=1748789481&sprefix=le+royaume+des+lucioles%2Caps%2C166&sr=8-1" target="_blank">Acheter</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Cam-Cam et Jax le Gecko Magique</td>
-              <td>Kindle</td>
-              <td>Abonnement Kindle (Free)<br>ou 8,93 €</td>
-              <td>Enfants surtout petits Garçons</td>
-              <td>
-                <a href="https://www.amazon.fr/CAM-CAM-GECKO-MAGIQUE-responsable-ACTIONS-ebook/dp/B0F8YCRKSJ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.D2YNh_5VH_U-uEaOCjFUhvE-dKJAATUlMym2cy6LIClMTi3edZRX1cVmtJngskUg.ImwxGEpvC-eQ_xSDJsFql6WCNrzojZv_E-uSDdov9hk&dib_tag=se&qid=1748789788&refinements=p_27%3AINDYE+GYAL&s=digital-text&sr=1-1&text=INDYE+GYAL" target="_blank">Acheter</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Noirs et Beaux</td>
-              <td>Kindle + Broché</td>
-              <td>8,89 €<br>14,08 € en Livre broché</td>
-              <td>Tous les Enfants de 2 à 10 ans</td>
-              <td>
-                <a href="https://www.amazon.fr/NOIRS-PUISSANCE-MANIFESTATION-LH%C3%89RITAGE-AFRO-ASCENDANT-ebook/dp/B0F9D1M2CY/ref=sr_1_2?dib=eyJ2IjoiMSJ9.D2YNh_5VH_U-uEaOCjFUhvE-dKJAATUlMym2cy6LIClMTi3edZRX1cVmtJngskUg.ImwxGEpvC-eQ_xSDJsFql6WCNrzojZv_E-uSDdov9hk&dib_tag=se&qid=1748789788&refinements=p_27%3AINDYE+GYAL&s=digital-text&sr=1-2&text=INDYE+GYAL" target="_blank">Acheter</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- FIN ENCAR EBOOKS -->
-
-    </section>
-  </main>
-
+  
+  <div class="container">
+    <div class="card">
+      <h2>Notre Vision</h2>
+      <p>Nous combinons <span class="highlight">innovation</span> et <span class="highlight">savoir-faire local</span> pour propulser votre entreprise à l'ère numérique.</p>
+    </div>
+    
+    <div class="card">
+      <h2>Nos Services</h2>
+      <ul>
+        <li><strong>Développement Web/Mobile</strong> → Solutions sur mesure.</li>
+        <li><strong>Formation Tech</strong> → Empowerment des talents locaux.</li>
+        <li><strong>Stratégie Digitale</strong> → Croissance ciblée.</li>
+      </ul>
+      <a href="#" class="btn">Demander un devis</a>
+    </div>
+  </div>
+  
   <footer>
-    <p>© 2025 - Y-GyaLaB'' by Indye 'Z Corporation | L'IA pour TOUS | Ansam Nou Pli FO</p>
+    <p>&copy; 2024 <span class="highlight">Y-GyaLab</span> | Guyane Française</p>
   </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
-</html>   
+</html>
