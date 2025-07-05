@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,7 @@
   <title>Y-GyaLab | Laboratoire d'IA Afrocentrée</title>
   <style>
     :root {
-      /* Palette afro-futuriste */
+      /* Palette afro-futuriste révisée */
       --violet-royal: #4B0082;
       --orange-solaire: #FF6B35;
       --or-akan: #D4AF37;
@@ -20,12 +20,24 @@
       --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
+    /* Police hiéroglyphique */
+    @font-face {
+      font-family: 'Aegyptus';
+      src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSansEgyptianHieroglyphs/NotoSansEgyptianHieroglyphs-Regular.ttf') format('truetype');
+    }
+
+    .hieroglyph {
+      font-family: 'Aegyptus', sans-serif;
+      font-size: 3rem;
+      color: var(--or-akan);
+    }
+
     /* Reset Afrocentré */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Ubuntu', 'Arial', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
     }
 
     body {
@@ -39,7 +51,7 @@
     .sticky-header {
       background: var(--noir-ebene);
       color: var(--blanc-coton);
-      padding: 1rem 3rem;
+      padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -51,7 +63,7 @@
     }
 
     .logo {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 800;
       background: linear-gradient(to right, var(--or-akan), var(--orange-solaire));
       -webkit-background-clip: text;
@@ -73,6 +85,8 @@
       letter-spacing: 1px;
       position: relative;
       padding: 0.5rem 0;
+      text-decoration: none;
+      font-size: 0.9rem;
     }
 
     .nav-links a::after {
@@ -101,17 +115,19 @@
     }
 
     .hero::before {
-      content: '⚡';
+      content: '𓁟'; /* Hiéroglyphe globe terrestre */
+      font-family: 'Aegyptus';
       position: absolute;
       top: -50px;
       right: -50px;
       font-size: 300px;
       opacity: 0.05;
       transform: rotate(30deg);
+      color: var(--or-akan);
     }
 
     .hero h1 {
-      font-size: 4rem;
+      font-size: 3.8rem;
       margin-bottom: 1.5rem;
       line-height: 1.2;
     }
@@ -133,6 +149,7 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: 0 1rem;
+      font-size: 0.9rem;
     }
 
     .btn-primary {
@@ -159,7 +176,7 @@
     /* Section Élévation */
     .elevation {
       padding: 6rem 2rem;
-      background: url('african-pattern.png') center/cover;
+      background-color: var(--blanc-coton);
     }
 
     .section-title {
@@ -213,8 +230,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--or-akan);
-      font-size: 4rem;
     }
 
     .agent-info {
@@ -227,11 +242,80 @@
       font-size: 1.5rem;
     }
 
-    /* Section YGYALAB */
-    .YGYALAB-section {
+    /* Section Y-GyaLab */
+    .ylab-section {
       background: var(--noir-ebene);
       color: var(--blanc-coton);
       padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    /* Section Blog */
+    .blog-container {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 3rem;
+    }
+
+    .blog-card {
+      background: var(--blanc-coton);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-afro);
+      transition: var(--transition);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .blog-image {
+      height: 200px;
+      background: var(--noir-ebene);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blog-content {
+      padding: 2rem;
+    }
+
+    .blog-content h3 {
+      color: var(--violet-royal);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      color: var(--ocre-motherland);
+      font-size: 0.9rem;
+    }
+
+    /* Intégration du Blog */
+    .blog-iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin: 3rem 0;
+      border-radius: 12px;
+      box-shadow: var(--shadow-afro);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--orange-solaire), var(--ocre-motherland));
+      color: var(--noir-ebene);
+      padding: 5rem 2rem;
       text-align: center;
     }
 
@@ -246,6 +330,11 @@
     .footer-logo {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+      background: linear-gradient(to right, var(--or-akan), var(--orange-solaire));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
     }
 
     .social-links {
@@ -317,7 +406,6 @@
       }
     }
   </style>
-  <!-- Police Ubuntu pour une typographie moderne africaine -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -326,9 +414,9 @@
     <div class="logo">Y-GyaLab</div>
     <nav class="nav-links">
       <a href="#">Accueil</a>
-      <a href="#">Élévation</a>
-      <a href="#">YGYALAB</a>
-      <a href="#">Agents IA</a>
+      <a href="elevation.html">Élévation</a>
+      <a href="about.html">À Propos</a>
+      <a href="https://ia-afrocentree.blogspot.com/" target="_blank">Blog</a>
       <a href="#">Contact</a>
     </nav>
   </header>
@@ -338,20 +426,22 @@
     <h1>Révolution Technoculturelle Afrocentrée</h1>
     <p>Premier laboratoire français d'IA conçu par et pour la diaspora noire. Nous transformons les technologies en outils d'empowerment culturel.</p>
     <div>
-      <a href="#" class="btn btn-primary">Découvrir YGYALAB</a>
-      <a href="#" class="btn btn-outline">Rencontrer nos Agents IA</a>
+      <a href="#ylab" class="btn btn-primary">Découvrir Y-GyaLab</a>
+      <a href="#elevation" class="btn btn-outline">Agents IA</a>
     </div>
   </section>
 
   <!-- Section Élévation -->
-  <section class="elevation">
+  <section class="elevation" id="elevation">
     <div class="section-title">
       <h2>Élévation Puissance Afro</h2>
     </div>
     
     <div class="agents-grid">
       <div class="agent-card">
-        <div class="agent-image">🛡️</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓀀</span> <!-- Homme parlant -->
+        </div>
         <div class="agent-info">
           <h3>Yssahys</h3>
           <p>Agent IA d'accompagnement spirituel et de développement personnel afrocentré. Retrouvez votre essence à travers des rituels numériques ancestraux.</p>
@@ -360,7 +450,9 @@
       </div>
       
       <div class="agent-card">
-        <div class="agent-image">📚</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓃭</span> <!-- Âme/esprit -->
+        </div>
         <div class="agent-info">
           <h3>Bulle de Yémeenoo</h3>
           <p>Espace sacré numérique personnalisé pour la méditation, la reconnexion identitaire et la croissance spirituelle.</p>
@@ -369,7 +461,9 @@
       </div>
       
       <div class="agent-card">
-        <div class="agent-image">🧠</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓂀</span> <!-- Œil omniscient -->
+        </div>
         <div class="agent-info">
           <h3>Boost Pill</h3>
           <p>Programme d'ateliers Mindset Afro-Caraïbéens pour développer une confiance en soi enracinée dans notre héritage culturel.</p>
@@ -379,15 +473,17 @@
     </div>
   </section>
 
-  <!-- Section YGYALAB -->
-  <section class="YGYALAB-section">
+  <!-- Section Y-GyaLab -->
+  <section class="ylab-section" id="ylab">
     <div class="section-title">
-      <h2 style="color: var(--or-akan);">YGYALAB Afrotech</h2>
+      <h2 style="color: var(--or-akan);">Y-GyaLab Afrotech</h2>
     </div>
     
     <div class="agents-grid">
       <div class="agent-card">
-        <div class="agent-image">🔍</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓃣</span> <!-- Balance de justice -->
+        </div>
         <div class="agent-info">
           <h3>Ayewo</h3>
           <p>Expert en audit éthique des algorithmes. Détecte et corrige les biais discriminatoires dans les systèmes d'IA.</p>
@@ -396,7 +492,9 @@
       </div>
       
       <div class="agent-card">
-        <div class="agent-image">🌍</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓅓</span> <!-- Savoir/éducation -->
+        </div>
         <div class="agent-info">
           <h3>Xam-Xam Express</h3>
           <p>Vulgarisateur pédagogique qui rend l'IA accessible à tous les publics, avec des exemples culturellement pertinents.</p>
@@ -405,7 +503,9 @@
       </div>
       
       <div class="agent-card">
-        <div class="agent-image">📊</div>
+        <div class="agent-image">
+          <span class="hieroglyph">𓊹</span> <!-- Divinité créatrice -->
+        </div>
         <div class="agent-info">
           <h3>Data Struct</h3>
           <p>Transforme vos données non structurées en analyses pertinentes pour les réalités socio-économiques afro-diasporiques.</p>
@@ -415,10 +515,65 @@
     </div>
   </section>
 
+  <!-- Section Blog -->
+  <section class="blog-container">
+    <div class="section-title">
+      <h2>Notre Blog Technoculturel</h2>
+    </div>
+    
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-image">
+          <span class="hieroglyph">𓂧</span> <!-- Discussion -->
+        </div>
+        <div class="blog-content">
+          <h3>L'IA est-elle raciste ?</h3>
+          <p>Analyse décoloniale des biais algorithmiques et stratégies pour une intelligence artificielle véritablement inclusive.</p>
+          <div class="blog-meta">
+            <span>𓆸 15 Juin 2025</span>
+            <span>12 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <div class="blog-image">
+          <span class="hieroglyph">𓁟</span> <!-- Globe terrestre -->
+        </div>
+        <div class="blog-content">
+          <h3>Panafricanisme Digital</h3>
+          <p>Comment les technologies redistribuent les cartes de la connectivité diasporique au 21ème siècle.</p>
+          <div class="blog-meta">
+            <span>𓆸 3 Juin 2025</span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <div class="blog-image">
+          <span class="hieroglyph">𓅨</span> <!-- Livre du savoir -->
+        </div>
+        <div class="blog-content">
+          <h3>Pédagogie Révolutionnaire</h3>
+          <p>Notre méthode pour rendre l'IA accessible aux communautés non-techniques.</p>
+          <div class="blog-meta">
+            <span>𓆸 20 Mai 2025</span>
+            <span>10 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="https://ia-afrocentree.blogspot.com/" target="_blank" class="btn btn-primary">Lire tous les articles</a>
+    </div>
+  </section>
+
   <!-- CTA Section -->
-  <section class="hero" style="padding: 5rem 2rem; background: linear-gradient(135deg, var(--orange-solaire), var(--ocre-motherland));">
-    <h1>ANSAM NOU PLI FO</h1>
-    <p>Ensemble, construisons un écosystème technologique où la diaspora noire passe de spectatrice à conceptrice.</p>
+  <section class="cta-section">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">ANSAM NOU PLI FO</h2>
+    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">Ensemble, construisons un écosystème technologique où la diaspora noire passe de spectatrice à conceptrice.</p>
     <a href="#" class="btn" style="background: var(--noir-ebene); color: var(--or-akan);">Rejoindre la Révolution</a>
   </section>
 
@@ -428,14 +583,36 @@
     <p>Premier laboratoire d'IA Afrocentrée en France</p>
     
     <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Blog</a>
-      <a href="#">Github</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://ia-afrocentree.blogspot.com/" aria-label="Blog">Blog</a>
+      <a href="#" aria-label="Github">Github</a>
     </div>
     
     <p>&copy; 2025 Indye Gyal'Z Corporation. Tous droits réservés.</p>
-    <p style="margin-top: 1rem; color: var(--or-akan); font-weight: 700;">Made with love</p>
+    <p style="margin-top: 1rem; color: var(--or-akan); font-weight: 700;">Made with GRINDAR & BOLT.build</p>
   </footer>
+
+  <!-- Script pour animations -->
+  <script>
+    // Animation au scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.agent-card, .blog-card').forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.6s ease-out';
+        observer.observe(card);
+      });
+    });
+  </script>
 </body>
 </html>
