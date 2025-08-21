@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDYE GYAL - Auteure et Facilitatrice</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Alibaba+Sans:wght@400;500&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'NotoSerifCJKsc';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Regular.otf') format('opentype');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'NotoSerifCJKsc';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Bold.otf') format('opentype');
+            font-weight: bold;
+        }
+        @font-face {
+            font-family: 'AlibabaSans';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Regular.otf') format('opentype');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'AlibabaSans';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Medium.otf') format('opentype');
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'DelaGothicOne';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/DelaGothicOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'AlibabaSans', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #fff;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-top: 30px;
+        }
+
+        h1 {
+            font-family: 'DelaGothicOne', cursive;
+            font-size: 48px;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #e6b980, #eacda3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            color: #e6b980;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 50px;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        .book-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+            .book-section {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .book-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-cover {
+            flex: 0 0 280px;
+            margin-right: 0;
+            margin-bottom: 30px;
+            position: relative;
+            align-self: center;
+        }
+
+        @media (min-width: 768px) {
+            .book-cover {
+                margin-right: 40px;
+                margin-bottom: 0;
+                align-self: flex-start;
+            }
+        }
+
+        .book-cover img {
+            width: 280px;
+            height: 280px;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover img:hover {
+            transform: scale(1.03);
+        }
+
+        .book-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #e6b980;
+        }
+
+        .book-description {
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        .book-quote {
+            font-style: italic;
+            font-size: 18px;
+            padding: 15px;
+            border-left: 4px solid #e6b980;
+            background: rgba(230, 185, 128, 0.1);
+            border-radius: 0 10px 10px 0;
+            margin-top: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: linear-gradient(45deg, #e6b980, #eacda3);
+            color: #1a1a1a;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(230, 185, 128, 0.4);
+            width: fit-content;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(230, 185, 128, 0.6);
+        }
+
+        .buy-button i {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .conclusion {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .conclusion h2 {
+            font-family: 'DelaGothicOne', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #e6b980;
+        }
+
+        .conclusion p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .amazon-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #e6b980, #eacda3);
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(230, 185, 128, 0.4);
+        }
+
+        .amazon-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(230, 185, 128, 0.6);
+        }
+
+        .amazon-button i {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .divider {
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #e6b980, transparent);
+            margin: 0 auto 40px;
+        }
+
+        .socials {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0;
+        }
+
+        .socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #e6b980;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(230, 185, 128, 0.3);
+        }
+
+        .socials a:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(230, 185, 128, 0.5);
+        }
+
+        .socials i {
+            font-size: 28px;
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            .book-title {
+                font-size: 24px;
+            }
+            .conclusion h2 {
+                font-size: 28px;
+            }
+            .intro, .book-description, .book-quote {
+                font-size: 16px;
+            }
+            .socials a {
+                width: 50px;
+                height: 50px;
+            }
+            .socials i {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>INDYE GYAL</h1>
+            <div class="subtitle">Auteure et Facilitatrice</div>
+            <div class="divider"></div>
+            <p class="intro">
+                Indye Gyal est une auteure passionnée qui crée des mini récits littéraires inspirants célébrant les Afrodescendants. À travers ses livres, elle invite les lecteurs à découvrir des histoires riches en émotions et en enseignements, tout en valorisant l'estime de soi, la confiance et la fierté naturelle. Son but est de sublimer toute personne ayant de la Mélanine.
+            </p>
+        </header>
+
+        <!-- Livre 1 -->
+        <div class="book-section">
+            <div class="book-cover">
+                <img src="https://assets-persist.lovart.ai/img/a7d1fae85edd4edf83a99c60bfbe20e4/752dda8a95a0151eef23ab503a36a1726c18e63dd7a0b4e8869b5ea7b3d3f7a5.jpg" alt="Le Royaume des Lucioles Sacrées">
+            </div>
+            <div class="book-info">
+                <h2 class="book-title">Le Royaume des Lucioles Sacrées</h2>
+                <p class="book-description">
+                    Un conte enchanteur qui transporte les jeunes lecteurs dans un univers magique où une petite fille découvre la puissance de sa lumière intérieure. À travers un voyage initiatique dans un royaume mystérieux, l'héroïne apprend l'importance de la confiance en soi et du courage face à l'adversité.
+                </p>
+                <div class="book-quote">
+                    "Dans le royaume des lucioles sacrées, chaque enfant porte en lui une lumière unique capable d'illuminer le monde entier."
+                </div>
+                <a href="https://amzn.eu/d/8LO0KXs" target="_blank" class="buy-button">
+                    <i class="ri-amazon-fill"></i> Acheter sur Amazon
+                </a>
+            </div>
+        </div>
+
+        <!-- Livre 2 -->
+        <div class="book-section">
+            <div class="book-cover">
+                <img src="https://assets-persist.lovart.ai/img/a7d1fae85edd4edf83a99c60bfbe20e4/5976324347d269d36190c5aff41edbff763d5949a5b39b6d96f077f5f2672884.jpg" alt="Noirs et Beaux">
+            </div>
+            <div class="book-info">
+                <h2 class="book-title">Noirs et Beaux</h2>
+                <p class="book-description">
+                    Un Mantra de la beauté noire sous toutes ses formes. Ce livre inspirant explore la richesse des différentes nuances de peau, textures de cheveux et traits distinctifs qui font la beauté de la diversité. Une œuvre essentielle pour renforcer l'estime de soi et la fierté culturelle chez les jeunes lecteurs.
+                </p>
+                <div class="book-quote">
+                    "Notre peau est un héritage précieux, un témoignage de notre histoire et de notre force. Noirs et fiers, nous brillons d'une beauté intemporelle."
+                </div>
+                <a href="https://amzn.eu/d/6wsOjnv" target="_blank" class="buy-button">
+                    <i class="ri-amazon-fill"></i> Acheter sur Amazon
+                </a>
+            </div>
+        </div>
+
+        <!-- Livre 3 -->
+        <div class="book-section">
+            <div class="book-cover">
+                <img src="https://assets-persist.lovart.ai/img/a7d1fae85edd4edf83a99c60bfbe20e4/344f067277dd725db75cd0790a4e6e6bc5ddb8b868049fa9697bb9ebbe2aa958.jpg" alt="CAM-CAM et le JAX GECKO MAGIQUE">
+            </div>
+            <div class="book-info">
+                <h2 class="book-title">CAM-CAM et le JAX GECKO MAGIQUE</h2>
+                <p class="book-description">
+                    Une aventure palpitante où le jeune Cam-Cam et Jax son gecko aux pouvoirs extraordinaires qui vivent moultes péripéties. Ensemble, ils affronteront des défis qui enseigneront à Cam-Cam l'importance de la solidarité, du respect dû aux ainés et de la persévérance.
+                </p>
+                <div class="book-quote">
+                    "Les plus grandes aventures commencent souvent par une association inattendue. Le courage n'est pas l'absence de peur, mais la volonté d'avancer malgré elle."
+                </div>
+                <a href="https://amzn.eu/d/6d9UrDs" target="_blank" class="buy-button">
+                    <i class="ri-amazon-fill"></i> Acheter sur Amazon
+                </a>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2>Découvrez l'univers d'Indye Gyal</h2>
+            <p>
+                Plongez dans ces histoires captivantes qui célèbrent la diversité, l'aventure et la découverte de soi. Les livres d'Indye Gyal sont des trésors de sagesse et d'inspiration pour les lecteurs de tous âges, offrant des perspectives uniques et des personnages auxquels chacun peut s'identifier.
+            </p>
+            <a href="https://www.amazon.fr/stores/INDYE-GYAL/author/B0FBS79NK3?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" target="_blank" class="amazon-button">
+                <i class="ri-amazon-fill"></i> Voir tous les livres sur Amazon
+            </a>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="socials">
+            <a href="https://www.instagram.com/elevationpuissance_afro/?igsh=MWF2NGtrZXkxaXR0Yg%3D%3D" target="_blank">
+                <i class="ri-instagram-fill"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
